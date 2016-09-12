@@ -1,0 +1,73 @@
+/*
+Theme Name: Terra Proto
+Theme URI: https://chrisbrownwebdev.com/blog
+Author: Chris Brown
+Author URI: https://chrisbrownwebdev.com/
+Description: Prototype for a Terra Toys theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: PROTO
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top {
+  margin-top: 40px;
+}
+
+.current-menu-item > a {
+  background: #000;
+}
+
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;
+}
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
